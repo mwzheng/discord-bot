@@ -5,6 +5,7 @@ const Discord = require('discord.js');
 module.exports = {
     name: 'meme',
     description: 'Sends back a random meme',
+    cooldown: 3,
     execute(msg, args) {
         axios.get('https://meme-api.herokuapp.com/gimme')
             .then(res => {
