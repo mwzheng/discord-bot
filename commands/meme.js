@@ -7,9 +7,13 @@ module.exports = {
     description: 'Sends back a random meme',
     cooldown: 3,
     execute(msg, args) {
-        axios.get('https://meme-api.herokuapp.com/gimme')
+        const baseApi = 'https://meme-api.herokuapp.com/gimme';
+        let subreddit = args.join("");
+
+        url = (subreddit) ? `${baseApi}/${subreddit}` : baseApi;
+
+        axios.get(url)
             .then(res => {
-                console.log(res);
                 let embed = new Discord.MessageEmbed()
                     .setImage(`${res.data.preview[res.data.preview.length - 1]}`)
                     .setURL(`${res.data.postLink}`)
