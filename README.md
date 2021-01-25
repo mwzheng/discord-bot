@@ -19,6 +19,8 @@ TODO:
 
 
 Commands:
+- **!help [optional_command_name]:** Gives you info about all commands or a specific command
+
 - **!ping:** Responds with 'Pong' (To test if bot is running)
 
 - **!affirmation:** Responds with a random affirmation
@@ -28,6 +30,8 @@ Commands:
 - **!play [Youtube song link] or [Search term]:** Plays the song / adds it to queue 
 
 - **!skip:** Skips the current song playing
+
+- **!next:** Responds with the next song in queue if there is one
 
 - **!stop:** Clears the queue and stops the current song playing
 
