@@ -7,6 +7,7 @@ module.exports = {
     name: 'play',
     description: 'Play a song',
     cooldown: 2,
+    usage: '<song_name/youtube_url>',
     async execute(msg, args) {
         try {
             const songQueue = msg.client.songQueue;

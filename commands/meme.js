@@ -5,6 +5,7 @@ module.exports = {
     name: 'meme',
     description: 'Sends back a random meme',
     cooldown: 3,
+    usage: '<optional_subreddit_name>',
     execute(msg, args) {
         const baseApi = 'https://meme-api.herokuapp.com/gimme';
         let subreddit = args.join("");

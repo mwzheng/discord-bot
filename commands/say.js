@@ -4,6 +4,7 @@ module.exports = {
     name: 'say',
     description: 'Converts text to speech',
     cooldown: 3,
+    usage: '<text_you_want_to_convert_to_speech>',
     execute(msg, args) {
         var channel = msg.member.voice.channel;
 
