@@ -1,7 +1,9 @@
 ## Discord Bot
 
 
-Simple discord bot to play music or just post memes on command.
+Simple discord bot to plays music/posts memes and other stuff on command.
+
+ Songs are from youtube and memes from reddit.
 
 
 TODO:
@@ -17,17 +19,17 @@ TODO:
 
 
 Commands:
-- **!ping:** Responds with 'Pong'
+- **!ping:** Responds with 'Pong' (To test if bot is running)
 
 - **!affirmation:** Responds with a random affirmation
 
 - **!meme [optional subreddit]:** Responds with a random meme from reddit
 
-- **!play [Youtube song link] or [Search term]:** Plays the video / adds it to queue 
+- **!play [Youtube song link] or [Search term]:** Plays the song / adds it to queue 
 
-- **!skip:** Skips the current video playing
+- **!skip:** Skips the current song playing
 
-- **!stop:** Clears the queue and stops the current audio playing
+- **!stop:** Clears the queue and stops the current song playing
 
 - **!say [text]:** Converts text to speech
 
@@ -38,6 +40,10 @@ Requirements:
 
 
 Resources:
+
+[Meme API](https://github.com/D3vd/Meme_Api)
+
+[Affirmation API](https://github.com/annthurium/affirmations)
 
 [Discord Music Bot Tutorial](https://gabrieltanner.org/blog/dicord-music-bot)
 
