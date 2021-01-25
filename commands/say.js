@@ -1,5 +1,6 @@
 const discordTTS = require("discord-tts");
 
+// Converts text to speech
 module.exports = {
     name: 'say',
     description: 'Converts text to speech',
@@ -8,11 +9,12 @@ module.exports = {
         var channel = msg.member.voice.channel;
 
         if (msg.client.songQueue.size !== 0)
-            return msg.channel.send(`${msg.author} You can't use !say right now. A song is currently playing!`);
+            return msg.channel.send(`${msg.author} A song is currently playing!`);
 
         channel.join()
             .then(connection => {
-                connection.play(discordTTS.getVoiceStream(args.join(" ")))
+                connection
+                    .play(discordTTS.getVoiceStream(args.join(" ")))
                     .on('finish', () => channel.leave())
             });
     },
