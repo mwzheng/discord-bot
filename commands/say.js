@@ -1,6 +1,5 @@
 const discordTTS = require("discord-tts");
 
-// Converts text to speech
 module.exports = {
     name: 'say',
     description: 'Converts text to speech',

@@ -1,6 +1,5 @@
 const axios = require('axios');
 
-// Replies with an affirmation to the user
 module.exports = {
     name: 'affirmation',
     description: 'Affirmation!',

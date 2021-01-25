@@ -3,7 +3,6 @@ const ytsearch = require('yt-search');
 
 const url_regex = '(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})';
 
-// Plays a song in the users voice channel
 module.exports = {
     name: 'play',
     description: 'Play a song',
@@ -23,7 +22,6 @@ module.exports = {
             if (args.match(url_regex)) {
                 youtubeURL = args;
             } else {
-                // Get url of first youtube video when search term entered
                 const video = await ytsearch(args);
                 youtubeURL = (video.videos.length > 1) ? video.videos[0].url : null;
             }

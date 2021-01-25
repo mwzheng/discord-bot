@@ -1,7 +1,6 @@
 const axios = require('axios');
 const Discord = require('discord.js');
 
-// Replies with a random meme from redit
 module.exports = {
     name: 'meme',
     description: 'Sends back a random meme',
