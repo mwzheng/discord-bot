@@ -19,7 +19,7 @@ TODO:
 
 
 Commands:
-- **!help [optional_command_name]:** Gives you info about all commands or a specific command
+- **!help [optional command name]:** Gives you info about all commands or a specific command
 
 - **!ping:** Responds with 'Pong' (To test if bot is running)
 
@@ -37,6 +37,7 @@ Commands:
 
 - **!say [text]:** Converts text to speech
 
+- **!random [optional max number]:** Get a random number between 1 and 100/max_number
 
 
 Requirements:
