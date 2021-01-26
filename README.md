@@ -3,21 +3,22 @@
 
 Simple discord bot to plays music/posts memes and other stuff on command.
 
- Songs are from youtube and memes from reddit.
+Songs are from youtube and memes from reddit.
 
 
 TODO:
 
 - Create a .env file and add your bot_token 
 
-- If you plan on using the !ticker command get an API key from Alpha Vantage (It's free)
+- If you plan on using the !ticker command, get an API key from [Alpha Vantage](https://www.alphavantage.co/support/#api-key) (It's free)
 
-- To use the !define command get a token from [OwlBot](https://owlbot.info/?q=deadly) (It's free)
+- To use the !define command, get a token from [OwlBot](https://owlbot.info/?q=deadly) (It's free)
 
-- $ npm install
+- To use the !gif command, get an API Key from [Giphy](https://developers.giphy.com/docs/api) (It's free)
 
 
 **To Start:**
+- $ npm install
 
 - $ npm start
 
@@ -49,6 +50,8 @@ Commands:
 
 - **!define [a_word]:** Defines the given word using OwlBot API (Uses the first definition returned)
 
+- **!gif [search_term]:** Returns a random gif related to the search term
+
 Requirements:
 - Must have ffmpeg installed on local machine running the bot if you want to use the audio commands (play, skip, stop)
 
@@ -65,3 +68,5 @@ Resources:
 [Alpha Vantage Docs](https://www.alphavantage.co/documentation/)
 
 [OwlBot](https://owlbot.info)
+
+[Giphy](https://developers.giphy.com/docs/sdk)
