@@ -10,7 +10,9 @@ TODO:
 
 - Create a .env file and add your bot_token 
 
-- If you plan on using the !ticker command get an API key from Alpha Vantage (Free)
+- If you plan on using the !ticker command get an API key from Alpha Vantage (It's free)
+
+- To use the !define command get a token from [OwlBot](https://owlbot.info/?q=deadly) (It's free)
 
 - $ npm install
 
@@ -45,6 +47,8 @@ Commands:
 
 - **!ticker [ticker]:** Responds with the latest info (Open, Close, High, Low) about the stock
 
+- **!define [a_word]:** Defines the given word using OwlBot API (Uses the first definition returned)
+
 Requirements:
 - Must have ffmpeg installed on local machine running the bot if you want to use the audio commands (play, skip, stop)
 
@@ -59,3 +63,5 @@ Resources:
 [Discord.js Guide](https://discordjs.guide)
 
 [Alpha Vantage Docs](https://www.alphavantage.co/documentation/)
+
+[OwlBot](https://owlbot.info)
