@@ -39,6 +39,8 @@ Commands:
 
 - **!random [optional max number]:** Get a random number between 1 and 100/max_number
 
+- **!joke:** Replies with a random joke
+
 
 Requirements:
 - Must have ffmpeg installed on local machine running the bot if you want to use the audio commands (play, skip, stop)
