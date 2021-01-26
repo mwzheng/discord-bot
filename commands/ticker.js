@@ -13,6 +13,7 @@ module.exports = {
         let alphaRequest = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${ticker}&apikey=${process.env.ALPHA_VANTAGE_KEY}`
 
         try {
+
             let stockData = await axios.get(alphaRequest)
                 .then(res => res.data);
 
@@ -24,13 +25,17 @@ module.exports = {
             const high = parseFloat(latestData['2. high']).toFixed(2);
             const yahooUrl = `https://finance.yahoo.com/quote/${ticker}?p=${ticker}&.tsrc=fin-srch`
 
+            ticker = ticker.toUpperCase();
+
             const companyName = await axios
-                .get(`https://ticker-2e1ica8b9.now.sh/keyword/${ticker}`)
-                .then(res => res.data[0].name);
+                .get(`https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${ticker}&apikey=${process.env.ALPHA_VANTAGE_KEY}`)
+                .then(res => res.data.bestMatches)
+                .then(res => res.filter(data => data['1. symbol'] === ticker))
+                .then(res => res[0]['2. name'])
 
             const embeded = new Discord.MessageEmbed()
                 .setThumbnail('https://s.yimg.com/cv/apiv2/myc/finance/Finance_icon_0919_250x252.png')
-                .setTitle(`${companyName} [${ticker.toUpperCase()}]`)
+                .setTitle(`${companyName} [${ticker}]`)
                 .addFields(
                     { name: '**Date**', value: `${latestRefreshDate}` },
                     { name: '\u200b', value: '\u200b', inline: false },
