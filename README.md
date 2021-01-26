@@ -8,7 +8,9 @@ Simple discord bot to plays music/posts memes and other stuff on command.
 
 TODO:
 
-- Create a .env file and add your bot_token
+- Create a .env file and add your bot_token 
+
+- If you plan on using the !ticker command get an API key from Alpha Vantage (Free)
 
 - $ npm install
 
@@ -41,10 +43,10 @@ Commands:
 
 - **!joke:** Replies with a random joke
 
+- **!ticker [ticker]:** Responds with the latest info (Open, Close, High, Low) about the stock
 
 Requirements:
 - Must have ffmpeg installed on local machine running the bot if you want to use the audio commands (play, skip, stop)
-
 
 Resources:
 
@@ -55,3 +57,5 @@ Resources:
 [Discord Music Bot Tutorial](https://gabrieltanner.org/blog/dicord-music-bot)
 
 [Discord.js Guide](https://discordjs.guide)
+
+[Alpha Vantage Docs](https://www.alphavantage.co/documentation/)
