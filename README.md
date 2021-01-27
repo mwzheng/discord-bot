@@ -52,6 +52,8 @@ Commands:
 
 - **!gif [optional_search_term]:** Returns a random gif or if provided something related to the search term
 
+- **!clear [number_from_2_100]:** Deletes given number of messages from the channel (between 2 - 100)
+
 Requirements:
 - Must have ffmpeg installed on local machine running the bot if you want to use the audio commands (play, skip, stop)
 
