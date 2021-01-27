@@ -10,7 +10,7 @@ module.exports = {
         if (isNaN(args)) {
             msg.channel.send(`${msg.author} invalid number, defaulting to max 100`);
         } else {
-            max = parseInt(args);
+            max = (args) ? parseInt(args) : max;
         }
 
         const randomNumber = 1 + Math.floor(Math.random() * max);
