@@ -8,6 +8,8 @@ module.exports = {
     execute(msg, args) {
         var channel = msg.member.voice.channel;
 
+        if (args.length < 1) return msg.channel.send(`${msg.author} Please pass in something for me to say.`)
+
         if (msg.client.songQueue.size !== 0)
             return msg.channel.send(`${msg.author} A song is currently playing!`);
 

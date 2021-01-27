@@ -50,7 +50,7 @@ Commands:
 
 - **!define [a_word]:** Defines the given word using OwlBot API (Uses the first definition returned)
 
-- **!gif [search_term]:** Returns a random gif related to the search term
+- **!gif [optional_search_term]:** Returns a random gif or if provided something related to the search term
 
 Requirements:
 - Must have ffmpeg installed on local machine running the bot if you want to use the audio commands (play, skip, stop)
