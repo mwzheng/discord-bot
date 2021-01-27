@@ -66,7 +66,7 @@ module.exports = {
                 }
             } else {
                 serverQueue.songs.push(song);
-                return msg.channel.send(
+                msg.channel.send(
                     `**${song.title}** has been added to the queue!`
                 );
             }
@@ -74,6 +74,8 @@ module.exports = {
             console.log(error);
             msg.channel.send(error.msg);
         }
+
+        msg.delete({ timeout: 5000, reason: 'Reduce chat log spam' });
     },
     play(message, song) {
         const queue = message.client.songQueue;

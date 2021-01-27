@@ -2,9 +2,9 @@ const axios = require('axios');
 
 module.exports = {
     name: 'gif',
-    description: 'Sends back a random gif based on search term',
+    description: 'Sends back a random gif or something related to search term',
     cooldown: 3,
-    usage: '<gif_search_term>',
+    usage: '<optional_gif_search_term>',
     async execute(msg, args) {
         let searchQuery = args.join('');
         const link = (args.length < 1) ? `http://api.giphy.com/v1/gifs/trending?api_key=${process.env.GIPHY_API_KEY}` :
@@ -17,5 +17,6 @@ module.exports = {
         const randomIndex = Math.floor(Math.random() * gifData['pagination']['count']);
         const randomGif = gifData['data'][randomIndex]['embed_url'];
         msg.channel.send(randomGif);
+        msg.delete({ reason: 'Reduce chat log spam' });
     },
 };

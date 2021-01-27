@@ -9,5 +9,6 @@ module.exports = {
         msg.channel.send("Clearing queue & leaving the voice channel.")
         serverQueue.songs = [];
         serverQueue.connection.dispatcher.end();
+        msg.delete({ reason: 'Reduce chat log spam' });
     },
 };

@@ -54,5 +54,7 @@ module.exports = {
         } catch (error) {
             msg.channel.send(`${msg.author} The ticker [${ticker}] does not exist!`);
         }
+
+        msg.delete({ reason: 'Reduce chat log spam' });
     },
 };

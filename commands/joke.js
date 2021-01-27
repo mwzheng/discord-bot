@@ -9,5 +9,7 @@ module.exports = {
             .get('https://official-joke-api.appspot.com/jokes/random')
             .then(res => res.data)
             .then(res => msg.channel.send(`${msg.author} ${res.setup}\n||${res.punchline}||`))
+
+        msg.delete({ reason: 'Reduce chat log spam' });
     },
 };

@@ -19,5 +19,7 @@ module.exports = {
                     .play(discordTTS.getVoiceStream(args.join(" ")))
                     .on('finish', () => channel.leave())
             });
+
+        msg.delete({ timeout: 5000, reason: 'Reduce chat log spam' });
     },
 };

@@ -40,5 +40,7 @@ module.exports = {
         } catch (err) {
             msg.channel.send(`${msg.author} The word ${word} does not exist in the Owlbot dictionary!`);
         }
+
+        msg.delete({ reason: 'Reduce chat log spam' });
     },
 };

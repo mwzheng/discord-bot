@@ -2,7 +2,7 @@ const axios = require('axios');
 
 module.exports = {
     name: 'affirmation',
-    description: 'Affirmation!',
+    description: 'Responds to user with a random affirmation',
     cooldown: 3,
     execute(msg, args) {
         axios.get('https://www.affirmations.dev')
@@ -13,5 +13,7 @@ module.exports = {
             .catch(error => {
                 console.log(error);
             })
+
+        msg.delete({ timeout: 5000, reason: 'Reduce chat log spam' })
     },
 };

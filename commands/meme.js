@@ -24,5 +24,7 @@ module.exports = {
             .catch(error => {
                 console.log(error);
             })
+
+        msg.delete({ reason: 'Reduce chat log spam' });
     },
 };

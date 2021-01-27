@@ -11,5 +11,7 @@ module.exports = {
         } else {
             msg.channel.send('No songs in queue! Add one!');
         }
+
+        msg.delete({ reason: 'Reduce chat log spam' });
     },
 };
