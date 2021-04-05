@@ -16,7 +16,7 @@
     "@discordjs/opus": "^0.5.0",
     "axios": "^0.21.1",
     "discord-tts": "^1.0.3",
-    "discord.js": "^12.5.1",
+    "discord.js": "^12.5.3",
     "dotenv": "^8.2.0",
     "ffmpeg": "0.0.4",
     "fluent-ffmpeg": "^2.1.2",
