@@ -54,6 +54,8 @@ Commands:
 
 - **!clear [number_from_2_100]:** Deletes given number of messages from the channel (between 2 - 100)
 
+- **!yo:** @everyone in the channel with message "Any [timer]ers?" (Uses timeZone: America/New_York)
+
 Requirements:
 - Must have ffmpeg installed on local machine running the bot if you want to use the audio commands (play, skip, stop)
 
