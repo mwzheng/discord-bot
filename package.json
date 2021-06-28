@@ -17,7 +17,7 @@
     "axios": "^0.21.1",
     "discord-tts": "^1.0.3",
     "discord.js": "^12.5.3",
-    "dotenv": "^8.2.0",
+    "dotenv": "^10.0.0",
     "ffmpeg": "0.0.4",
     "fluent-ffmpeg": "^2.1.2",
     "owlbot-js": "^2.0.2",
